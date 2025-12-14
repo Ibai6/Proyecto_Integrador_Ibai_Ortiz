@@ -1,0 +1,93 @@
+/*Estilo generico*/
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+/*Para titulos*/
+h1 {
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+/**/
+#zonaNombre {
+    margin-bottom: 15px;
+}
+
+#zonaNombre input {
+    padding: 6px;
+    font-size: 14px;
+}
+
+#zonaNombre button {
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+/*Botones*/
+button {
+    padding: 8px 14px;
+    margin: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/*Zona dado*/
+#zonaDado {
+    margin: 15px 0;
+}
+
+#imgDado {
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+/*Moensajes*/
+#mensaje {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+#contadorTiradas {
+    margin-top: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+/*Tabla para jugar*/
+#tabla10x10 {
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+#tabla10x10 td {
+    width: 60px;              /* casillas más grandes que de normal estan pequeñas*/
+    height: 60px;             /* casillas más grandes */
+    border: 1px solid #333;
+    background-color: #fff;
+}
+
+/*imagenes*/
+#tabla10x10 img {
+    width: 48px;              /* imagen más grande */
+    height: 48px;             /* imagen más grande */
+    display: block;
+    margin: 0 auto;
+}
+
+/*Casillas posibles*/
+#tabla10x10 td[style*="red"] {
+    cursor: pointer;
+}

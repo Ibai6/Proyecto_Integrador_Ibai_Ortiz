@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura del héroe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <h1>Aventura del héroe</h1><!--Titulo-->
+
+    <div id="zonaNombre"><!--Contenedor para el formulario-->
+        <label>Mete tu nombre:</label>
+        <input type="text" id="nombreJugador" autocomplete="off">
+        <button id="btnIntroducirNombre">Aceptar</button>
+    </div>
+
+    <h2 id="tituloHeroe"></h2>
+
+    <button id="btnJugar" disabled>Jugar</button><!--Boton que al principio esta deshabilitado-->
+
+    <div id="zonaDado"><!--Contenedor del dado-->
+        <button id="btnTirarDado">Tirar dado</button>
+        <img id="imgDado" src="img/dado1.jpg" alt="Dado" width="60" height="60">
+    </div>
+
+    <p id="mensaje"></p>
+    <p id="contadorTiradas" style="display:none;"></p>
+
+    <button id="btnSiguiente" style="display:none;">Siguiente partida</button>
+
+    <table id="tabla10x10"></table>
+
+</body>
+</html>
